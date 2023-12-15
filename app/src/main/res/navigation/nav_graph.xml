@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/primeroFragment">
+    <fragment
+        android:id="@+id/primeroFragment"
+        android:name="com.yordizisa.ejemplonavegacion.PrimeroFragment"
+        android:label="fragment_primero"
+        tools:layout="@layout/fragment_primero" >
+        <action
+            android:id="@+id/action_primeroFragment_to_segundoFragment2"
+            app:destination="@id/segundoFragment" />
+        <action
+            android:id="@+id/action_primeroFragment_to_tercerofragment2"
+            app:destination="@id/tercerofragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/segundoFragment"
+        android:name="com.yordizisa.ejemplonavegacion.SegundoFragment"
+        android:label="fragment_segundo"
+        tools:layout="@layout/fragment_segundo" >
+        <action
+            android:id="@+id/action_segundoFragment_to_cuartoFragment"
+            app:destination="@id/cuartoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tercerofragment"
+        android:name="com.yordizisa.ejemplonavegacion.Tercerofragment"
+        android:label="fragment_tercerofragment"
+        tools:layout="@layout/fragment_tercerofragment" />
+    <fragment
+        android:id="@+id/cuartoFragment"
+        android:name="com.yordizisa.ejemplonavegacion.CuartoFragment"
+        android:label="fragment_cuarto"
+        tools:layout="@layout/fragment_cuarto" />
+</navigation>
